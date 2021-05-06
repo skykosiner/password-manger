@@ -2,7 +2,7 @@ import express, { Request, Response, Application } from "express";
 import dotenv from "dotenv";
 import { port } from "./types"
 
-dotenv.config()
+dotenv.config();
 
 const app: Application = express();
 const PORT: port  = 42069;
@@ -14,5 +14,5 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server started on http://localhost:${PORT}`)
-})
+    console.log(`Server started on http://localhost:${PORT}`);
+});

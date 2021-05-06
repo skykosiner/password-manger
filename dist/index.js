@@ -10,6 +10,7 @@ const app = express_1.default();
 const PORT = 42069;
 app.get("/", (req, res) => {
     res.status(200).send(`API is running in ${process.env.NODE_ENV} mode `);
+    req;
 });
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}`);
